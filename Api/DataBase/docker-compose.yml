@@ -1,0 +1,17 @@
+version: '3'
+services:
+  primarydb:
+    image: postgres:13
+    container_name: snake-db
+    restart: always
+    volumes:
+      - ./data/primarydb/:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${PrimaryDB__user}
+      - POSTGRES_PASSWORD=${PrimaryDB__password}
+      - POSTGRES_DB=${PrimaryDB__database}
+    ports:
+      - "5466:5432"
+
+      
+

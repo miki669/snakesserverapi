@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:11092",
+      "sslPort": 44315
+    }
+  },
+  "profiles": {
+    "SnakeServerAPI": {
+      "commandName": "Project",
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "PrimaryDB__password": "lox-pidor",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "PrimaryDB__host": "localhost",
+        "PrimaryDB__user": "snake",
+        "PrimaryDB__port": "5466",
+        "discord_client_id": "995710499998150796",
+        "PrimaryDB__database": "snake"
+      },
+      "applicationUrl": "https://localhost:7046;http://localhost:5046",
+      "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:7046/swagger",
+      "environmentVariables": {
+        "PrimaryDB__password": "lox-pidor",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "PrimaryDB__host": "localhost",
+        "PrimaryDB__user": "snake",
+        "ASPNETCORE_URLS": "https://localhost:7046;http://localhost:5046",
+        "PrimaryDB__port": "5466",
+        "PrimaryDB__database": "snake"
+      },
+      "distributionName": ""
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}
