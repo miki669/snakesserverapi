@@ -87,7 +87,6 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpLogging();
 app.UseHttpsRedirection();
-app.UseW3CLogging();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
