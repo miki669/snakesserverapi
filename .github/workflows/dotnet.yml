@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build and push image
-      run:
+      run: |
           DOCKER_NAME=app
           DOCKER_IMAGE=ghcr.io/miki669/SnakeServerApi/$DOCKER_NAME:${{ github.ref_name }}
           docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
