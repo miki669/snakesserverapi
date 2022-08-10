@@ -27,5 +27,3 @@ services:
       - PrimaryDB__password=${PrimaryDB__password}
     depends_on:
       - primarydb
-    ports:
-      - "6666:80"
