@@ -11,8 +11,8 @@ namespace SnakeServerAPI.DiscordApi
     public class CheckMemberRole
     {
         #region GUILD
-        static readonly string token = "OTk1NzEwNDk5OTk4MTUwNzk2.G4fnND.uZNRH9wI5EAa_r9bKh4dm3N7AQ9ni7FKjvmyCs";
-        static readonly ulong guildId = 967405377798942750;
+        static readonly string token = "";
+        static readonly ulong guildId = 123;
         #endregion
 
 
